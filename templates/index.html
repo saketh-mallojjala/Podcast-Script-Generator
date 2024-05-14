@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>News</title>
+   <link rel="stylesheet" href="/static/style.css"/>
+
+</head>
+<body style="background-image: url('static/bg.jpg');">
+
+
+
+<div class="container">
+    <form action="/process_form" method="post" >
+        <h1 style="background-color: #FFFFFF; text-align: center;">Podcast-Script Generator</h1>
+        <label for="url">URL:</label>
+        <input type="text" name="url" required><br>
+             <label for="count">Number of Articles:</label>
+        <input type="text" name="count" required><br>
+
+        <label for="index">Select Article:</label>
+        <input type="text" name="index" required><br>
+
+
+
+        <select>
+                     <option></option>
+                     <option value="indian" selected>Select News-Paper</option>
+                     <option>indian express</option>
+                     <option>the hindu</option>
+                  </select>
+
+        <button type="submit" name="action" value="get_podcastscript">Generate Podcast Script</button>
+        <button type="submit" name="action" value="get_content">Get Article Content</button>
+
+            <p></p>
+
+        <button type="submit" name="action" id="downloadButton" value="generate_excel">Download Excel</button>
+
+
+
+
+
+    </form>
+
+    </div>
+</body>
+</html>
